@@ -1,6 +1,6 @@
 # DevShowcase API Backend
 
-API REST desenvolvida em Java com Spring Boot para gerenciamento de perfis, projetos, tecnologias e avaliações.
+API REST desenvolvida com Java e Spring Boot para gerenciamento de perfis, projetos, tecnologias e avaliações.
 
 ## Tecnologias
 
@@ -16,12 +16,13 @@ API REST desenvolvida em Java com Spring Boot para gerenciamento de perfis, proj
 * Cadastro e consulta de perfis
 * Cadastro e consulta de tecnologias
 * Cadastro e consulta de projetos
-* Avaliação de projetos
+* Avaliação de projetos com nota e comentário
+* Cálculo da média das avaliações
 * Sistema de upvote
-* Paginação e filtros
+* Paginação e filtro de projetos
 * Validação de dados
 * Tratamento global de exceções
-* Documentação da API com Swagger
+* Documentação interativa com Swagger
 
 ## Relacionamentos
 
@@ -29,7 +30,7 @@ API REST desenvolvida em Java com Spring Boot para gerenciamento de perfis, proj
 * Project N:N Technology
 * Project 1:N Feedback
 
-## Principais endpoints
+## Endpoints
 
 ```text
 POST   /api/profiles
@@ -47,41 +48,16 @@ PUT    /api/projects/{id}/upvote
 
 ## Swagger
 
-Após executar a aplicação:
+A documentação da API está disponível em:
 
-```text
-http://localhost:8080/swagger-ui/index.html
-```
+https://devshowcase-api-backend.onrender.com/swagger-ui/index.html
 
-## Execução local
+## API em produção
 
-Configure as variáveis de ambiente:
-
-```text
-DB_URL
-DB_USERNAME
-DB_PASSWORD
-```
-
-Depois execute:
-
-```bash
-./mvnw spring-boot:run
-```
-
-No Windows:
-
-```powershell
-.\mvnw.cmd spring-boot:run
-```
-
-## Produção
-
-**API:** []
-
-**Swagger:** []
+https://devshowcase-api-backend.onrender.com
 
 ## Autores
 
 Eudes Franklin Alves Lisboa
+
 Maria Luiza Alves da Silva
